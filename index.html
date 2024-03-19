@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <link rel="stylesheet" type="text/css" href="styles/homepageStyle.css">
+  <script defer src="logic.js"></script>
+  <script defer src="slideShow.js"></script>
+  <title>Karjalanp11rakka homepage</title>
+</head>
+<body>
+  <div id="Start">
+    <div id="title">
+      <h2>KARJALANP11RAKKA</h2>
+    </div>
+  </div>
+  <br>
+  <div id="bar"></div>
+  <div id="Holder">
+    <div id="main">
+      <p data-lang="descText">3D computer graphics, animation, programming, and game development</p>
+    </div>
+    <div class="logo-container">
+      <a href="https://www.youtube.com/@karjalanp11rakka" target="_blank">
+        <img src="https://cdn.pixabay.com/photo/2018/05/27/22/48/social-3434840_1280.png" alt="Youtube logo">
+      </a>
+      <a href="https://karjalanp11rakka.itch.io/" target="_blank">
+        <img src="assets/logos/itch.png" alt="Itch logo">
+      </a>
+    </div>
+    <div id="GamesDiv">
+      <iframe frameborder="0" src="https://itch.io/embed/2066458?bg_color=0c0c0c&amp;fg_color=f07e11&amp;link_color=60ff2f&amp;border_color=e53b44" width="552" height="167">
+        <a href="https://karjalanp11rakka.itch.io/beast-battleground">Beast Battleground by Karjalanp11rakka</a>
+      </iframe>
+      <iframe frameborder="0" src="https://itch.io/embed/1836373?bg_color=050505&amp;fg_color=9ea6ae&amp;link_color=07ede9&amp;border_color=eada00" width="552" height="167">
+        <a href="https://karjalanp11rakka.itch.io/capsule-hologram">Capsule War: Capsule Hologram by Karjalanp11rakka</a>
+      </iframe>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div id="animalCombatPromo">
+      <img src="assets\Home\animCombatTitle.png" alt="Animal combat simulator title">
+      <br>
+      <div id="GamesDiv">
+        <iframe frameborder="0" src="https://itch.io/embed/2564966?bg_color=7290f3&amp;fg_color=aee54f&amp;link_color=f5281f&amp;border_color=cd9e42" width="552" height="167">
+          <a href="https://karjalanp11rakka.itch.io/animal-combat-simulator">Animal Combat Simulator by Karjalanp11rakka</a>
+        </iframe>
+      </div>
+      <p data-lang="animalCombatDesc">Simulate epic battles between two teams of diverse animals, each with unique stats. </p>
+      <div id="Slideshow">
+        <img class="slide" src="assets\GameScreenshots\animalCombatSim\Screenshot1.jpg" style="width:100%;">
+        <img class="slide" src="assets\GameScreenshots\animalCombatSim\Screenshot2.jpg" style="width:100%;">
+        <img class="slide" src="assets\GameScreenshots\animalCombatSim\Screenshot3.jpg" style="width:100%;">
+        <img class="slide" src="assets\GameScreenshots\animalCombatSim\Screenshot4.jpg" style="width:100%;">
+        <button class="ButtonLeft butto" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="ButtonRight butto" onclick="plusDivs(1)">&#10095;</button>
+        <br><br>
+      </div>
+    </div>
+    <hr>
+    <div id="LatestYoutubeVideo"></div>
+    <script>
+      const el = document.createElement("div");
+      el.innerHTML = `<h1 class="TextTitle">Latest video</h1><iframe id="ytplayer" src="https://www.youtube.com/embed/videoseries?si=ib7a-dV2O0dW9QN4&amp;list=PLAfIeoJznss4z1gzvpwIb6jt6AWIRmuh4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br><br>`;
+      document.getElementById("LatestYoutubeVideo").appendChild(el);
+
+      const sourceText = document.createElement("div");
+      sourceText.innerHTML = `<hr><p style="color: white;">This website is open source. You can see the source <a class="BlueLink" target="_blank" href="https://github.com/karjalanp11rakka/karjalanp11rakka.github.io">here</a>.</p><div class="bottomMargin"></div>`;
+      document.getElementById("Holder").appendChild(sourceText);
+
+      const languageData = {
+        'en': {
+          'descText': '3D computer graphics, animation, programming, and game development',
+          'animalCombatDesc': 'Simulate epic battles between two teams of diverse animals, each with unique stats.',
+        },
+        'fi': {
+          'descText': '3D grafiikaa, animaatioita, ohjelmointia ja pelienkehitystä',
+          'animalCombatDesc': 'Simuloi eeppisiä eläinten välisiä taisteluita. Eläimet jaetaan kahteen tiimiin, ja peli jatkuu, kunnes toisen tiimin eläimet ovat kuolleet.',
+        }
+      };
+    </script>
+  </div>
+  <br>
+  <div id="Footer"></div>
+</body>
+</html>

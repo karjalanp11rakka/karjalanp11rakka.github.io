@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link  rel="stylesheet" type="text/css" href="../styles/style.css">
+    <link  rel="stylesheet" type="text/css" href="../styles/galleryPageStyle.css">
+  <script defer src="../logic.js"></script>
+  <title>Gallery</title>
+</head>
+<body>
+  <div id="bar"></div>
+  <div id="Holder">
+    <div id="main">
+      <p data-lang="descriptionText"><b>Gallery</b></p>
+      <div id="GallerHolder"  class="bottomMargin">
+        <div class="gallery">
+          <a target="_blank" href="../assets/gallery/futuramaAnimation.mp4">
+            <video controls preload="metadata">
+              <source src="../assets/gallery/futuramaAnimation.mp4" type="video/mp4">
+            </video>
+          </a>
+          <div class="desc" data-lang="futurama">Futurama animation</div>
+        </div>
+        <div class="gallery">
+          <a target="_blank" href="../assets/gallery/angryBirdsAnimation.mp4">
+            <video controls preload="metadata">
+              <source src="../assets/gallery/angryBirdsAnimation.mp4" type="video/mp4">
+            </video>
+          </a>
+          <div class="desc">Angry birds animation <a class="BlueLink" target="_blank" href="angryBirdsCredits.txt">attributions</a></div>
+      </div>
+        <div class="gallery">
+          <a target="_blank" href="../assets/gallery/scrooge.png">
+              <img src="../assets/gallery/scrooge.png">
+          </a>
+          <div class="desc">Scrooge McDuck made based on a painting by Carl Barks</div>
+      </div>
+      <div class="gallery">
+          <a target="_blank" href="../assets/gallery/donaldDuck.mp4">
+            <video controls preload="metadata">
+              <source src="../assets/gallery/donaldDuck.mp4" type="video/mp4">
+            </video>
+          </a>
+          <div class="desc">Donald Duck facial animation test</div>
+      </div>
+    </div>
+    <script>
+      const languageData = {
+        'en': {
+          'descriptionText': 'Animations and renders',
+          'futurama': 'Futurama animation',
+        },
+        'fi': {
+          'descriptionText': 'Animaatioita ja muita projekteja',
+          'futurama': 'Futurama animaatio',
+        }
+      };
+    </script>
+  </div><br>
+  <div id="Footer"></div>
+</body>
+</html>

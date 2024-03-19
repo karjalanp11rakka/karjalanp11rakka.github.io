@@ -1,0 +1,29 @@
+#BrowserGames {
+  color: rgb(194, 194, 194);
+  margin-right: auto;
+  margin-left: auto;
+  width: 70%;
+  border-radius: 30px;
+  text-align: center;
+  background-color: rgb(31, 33, 30);
+  padding: 15px;
+}
+#BrowserGames img{
+  border: 10px solid rgb(40, 41, 36);
+  border-radius: 30px;
+  transition: border-color 0.6s ease;
+}
+#BrowserGames img:hover{
+  border-color: rgb(212, 172, 53);
+}
+
+#BrowserGamesHolder {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+.browserGame{
+  margin-right: 35px;
+  margin-left: 35px;
+}

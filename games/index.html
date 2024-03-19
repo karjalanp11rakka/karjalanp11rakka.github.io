@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link  rel="stylesheet" type="text/css" href="../styles/style.css">
+  <link  rel="stylesheet" type="text/css" href="../styles/gamesPageStyle.css">
+  <script defer src="../logic.js"></script>
+   <script defer src="../slideShow.js"></script>
+  <title>Games</title>
+</head>
+<body>
+  <div id="bar"></div>
+  <div id="Holder"><br>
+    <div id="main">
+      <p data-lang="descriptionText"><b>Downloadable games and projects</b></p>
+    </div>
+    <div id="GamesDiv">
+      <iframe frameborder="0" src="https://itch.io/embed/2066458?bg_color=0c0c0c&amp;fg_color=f07e11&amp;link_color=60ff2f&amp;border_color=e53b44" width="552" height="167">
+        <a href="https://karjalanp11rakka.itch.io/beast-battleground">Beast Battleground by Karjalanp11rakka</a>
+      </iframe>        
+      <iframe frameborder="0" src="https://itch.io/embed/2564966?bg_color=7290f3&amp;fg_color=aee54f&amp;link_color=f5281f&amp;border_color=cd9e42" width="552" height="167">
+        <a href="https://karjalanp11rakka.itch.io/animal-combat-simulator">Animal Combat Simulator by Karjalanp11rakka</a>
+      </iframe>
+      <iframe frameborder="0" src="https://itch.io/embed/1836373?bg_color=050505&amp;fg_color=9ea6ae&amp;link_color=07ede9&amp;border_color=eada00" width="552" height="167"><a href="https://karjalanp11rakka.itch.io/capsule-hologram">Capsule War: Capsule Hologram by Karjalanp11rakka</a></iframe>
+      <iframe frameborder="0" src="https://itch.io/embed/2088037?bg_color=00a8b2&amp;fg_color=ff5d18&amp;link_color=edeb52&amp;border_color=b86f50" width="552" height="167">
+        <a href="https://karjalanp11rakka.itch.io/mushroom-climb">Mushroom Climb by Karjalanp11rakka</a>
+      </iframe>
+      <iframe frameborder="0" src="https://itch.io/embed/1681082?bg_color=b8f39f&amp;fg_color=088f08&amp;link_color=5b64fa&amp;border_color=3e612c" width="552" height="167">
+        <a href="https://karjalanp11rakka.itch.io/crocodile-lake">Crocodile lake by Karjalanp11rakka</a>
+      </iframe>
+      <iframe frameborder="0" src="https://itch.io/embed/1553414?bg_color=262626&amp;fg_color=b6e0f8&amp;link_color=ffffff&amp;border_color=ffffff" width="552" height="167">
+        <a href="https://karjalanp11rakka.itch.io/ghost-kangoroo">Ghost kangaroo by Karjalanp11rakka</a>
+      </iframe>
+      <iframe frameborder="0" src="https://itch.io/embed/1353308?bg_color=63c64d&amp;fg_color=000000&amp;link_color=2ce8f4&amp;border_color=0851d0" width="552" height="167"><a href="https://karjalanp11rakka.itch.io/the-blue-monke">The blue monkey by Karjalanp11rakka</a></iframe>
+    </div>
+    <div id="BrowserGames">
+      <p data-lang="BrowserGamesDesc">You can play these games directly in the browser without having to download anything</p>
+      <div id="BrowserGamesHolder">
+        <div class="browserGame">
+  	  <h3>Mushroom Climb</h3>
+          <a href="https://karjalanp11rakka.github.io/games/mushroomClimb/index.html" target="_blank"><img src="../assets/GameIcons/mushroomClimb.png" alt="mushroom climb"></img></a>
+        </div>
+        <div class="browserGame">
+  	  <h3>Crocodile lake</h3>
+          <a href="https://karjalanp11rakka.github.io/games/crocodileLake/index.html" target="_blank"><img src="../assets/GameIcons/crocodileLake.png" alt="mushroom climb"></img></a>
+        </div>
+      </div>
+    </div>
+    <div id="Slideshow"  class="bottomMargin">
+      <h1 class="TextTitle" data-lang="titleText">Screenshots</h1>
+      <img class="slide" src="../assets\GameScreenshots\Screenshot1.jpg" style="width:100%;">
+      <img class="slide" src="../assets\GameScreenshots\Screenshot2.jpg" style="width:100%;">
+      <img class="slide" src="../assets\GameScreenshots\animalCombatSim\Screenshot3.jpg" style="width:100%;">
+      <img class="slide" src="../assets\GameScreenshots\Screenshot3.jpg" style="width:100%;">
+      <img class="slide" src="../assets\GameScreenshots\Screenshot4.jpg" style="width:100%;">
+      <img class="slide" src="../assets\GameScreenshots\Screenshot5.jpg" style="width:100%;">
+      <img class="slide" src="../assets\GameScreenshots\animalCombatSim\Screenshot1.jpg" style="width:100%;">
+      <img class="slide" src="../assets\GameScreenshots\Screenshot6.jpg" style="width:100%;">
+      <img class="slide" src="../assets\GameScreenshots\Screenshot7.jpg" style="width:100%;">
+      <img class="slide" src="../assets\GameScreenshots\Screenshot8.jpg" style="width:100%;">
+      <img class="slide" src="../assets\GameScreenshots\animalCombatSim\Screenshot2.jpg" style="width:100%;">
+      <img class="slide" src="../assets\GameScreenshots\Screenshot9.png" style="width:100%;">
+      <img class="slide" src="../assets\GameScreenshots\Screenshot10.png" style="width:100%;">
+      <img class="slide" src="../assets\GameScreenshots\Screenshot11.jpg" style="width:100%;">
+      <img class="slide" src="../assets\GameScreenshots\Screenshot12.jpg" style="width:100%;">
+      <img class="slide" src="../assets\GameScreenshots\animalCombatSim\Screenshot4.jpg" style="width:100%;">
+      <img class="slide" src="../assets\GameScreenshots\Screenshot13.jpg" style="width:100%;">
+      <button class="ButtonLeft butto" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="ButtonRight butto" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+
+   <script>
+      const languageData = {
+        'en': {
+          'descriptionText': 'Downloadable and in browser playable games and projects',
+ 	  'titleText': 'Screenshots',
+	  'BrowserGamesDesc':'You can play these games directly in the browser without having to download anything (mobile devices not supported)',
+        },
+        'fi': {
+          'descriptionText': 'Ladattavat ja selaimessa pelattavat pelit ja projektit',
+ 	  'titleText': 'Kuvakaappauksia',
+	  'BrowserGamesDesc':'Näitä pelejä voidaan pelata suoraan selaimessa lataamatta mitään',
+        }
+      };
+   </script>
+  <div id="Footer"></div>
+  </div><br>
+</body>
+</html>
