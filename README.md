@@ -1,3 +1,3 @@
-This is my personal open source website.
+This is my personal source website.
 
 ***https://karjalanp11rakka.github.io/***
